@@ -85,3 +85,4 @@ public class UserController {
 //path parameter and query parameter
 //validation should done in try block
 //Throws Used for Checked Exception
+//Custom Exception Handling And Global Exception Handling

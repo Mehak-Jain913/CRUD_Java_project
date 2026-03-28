@@ -1,6 +1,7 @@
 package com.mehak.Rest_Api.service;
 
 import com.mehak.Rest_Api.custom_exception.BusinessException;
+import com.mehak.Rest_Api.custom_exception.EmptyInputException;
 import com.mehak.Rest_Api.entity.User;
 import com.mehak.Rest_Api.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class UserService implements UserServiceImp{
     @Override
     public User addUser(User user) {
         if(user.getName()==null||user.getName().trim().isEmpty()){
-            throw new BusinessException("601","please send proper name , It blank");
+            throw new EmptyInputException("601","Input field is Empty");
         }
         try{
             User savedUser=userRepo.save(user);
