@@ -1,14 +1,63 @@
+# ======================
 # Maven
+# ======================
 target/
 *.class
+*.jar
+*.war
+*.ear
 
-# IntelliJ
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ======================
+# IntelliJ IDEA
+# ======================
 .idea/
 *.iml
+*.iws
+*.ipr
 
-# OS files
+# ======================
+# Eclipse (optional)
+# ======================
+.project
+.classpath
+.settings/
+
+# ======================
+# VS Code (optional)
+# ======================
+.vscode/
+
+# ======================
+# OS Files
+# ======================
 .DS_Store
 Thumbs.db
 
+# ======================
 # Logs
+# ======================
 *.log
+logs/
+
+# ======================
+# Environment / Secrets
+# ======================
+.env
+.env.*
+application.properties
+application.yml
+
+# ======================
+# Build / Temp
+# ======================
+out/
+build/
+
+# ======================
+# Node (if frontend added later)
+# ======================
+node_modules/
+dist/
